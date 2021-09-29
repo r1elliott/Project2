@@ -1,15 +1,34 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args) {
-        var myAccount = new BankAccount();
-        myAccount.deposit(1000);
-        myAccount.addInterest();
-        var didSucceed = myAccount.withdraw(200);
-        if (didSucceed)
-            System.out.println("Successfully made withdrawal");
-        else
-            System.out.println("Could not withdraw, current balance is " + myAccount.checkBalance());
+    private String addressLine1;
+    private String addressLine2;
+    private String city;
+    private String state;
+    private String postalcode;
+
+    public shippingAddress(String line1, String line2, String cityName, String stateName, String zipcode){
+        addressLine1 = line1;
+        addressLine2 = line2;
+        city = cityName;
+        state = stateName;
+        postalcode = zipcode;
+    }
+
+    public String getAddressLine1(){
+        return addressLine1;
+    }
+    public String getAddressLine2() {
+        return addressLine2;
+    }
+    public String getCity(){
+        return city;
+    }
+    public String getState(){
+        return state;
+    }
+    public String getPostalcode(){
+        return postalcode;
     }
 }
-
-
-
