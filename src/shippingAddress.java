@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class shippingAddress {
     private String addressLine1;
     private String addressLine2;
     private String city;
