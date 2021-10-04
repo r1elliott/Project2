@@ -1,14 +1,14 @@
 public class order {
-    private String shippingAddress;
+    private String shippingAddress1;
     private String orderedBy;
 
     public order(){
-        destination = shippingAddress;
+        var destination = shippingAddress1;
         orderedBy = Customer;
     }
 
     public String getDestination(){
-        return shippingAddress;
+        return shippingAddress1;
     }
     public String getOrdered(){
         return Customer;

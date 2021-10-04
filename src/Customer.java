@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Customer {
     private String name;
     private int customerID;
-    addresses = new ArrayList<shippingAddress>();
+    ArrayList<shippingAddress1> addresses;
 
     public Customer(String nameCustomer, int customerIDNum){
         name = nameCustomer;
@@ -18,8 +18,13 @@ public class Customer {
         return customerID;
     }
 
-    public String addAddress(String newAddress, String shippingAddress){
-        newAddress = shippingAddress;
+    public void addAddress(String newAddress, String shippingAddress1){
+        newAddress = shippingAddress1;
+    }
+
+    public String toString(){
+        var wholeAddress = addressline1 + "\n" +
+        return wholeAddress;
     }
 }
 
